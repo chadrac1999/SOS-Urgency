@@ -34,7 +34,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback {
      * installed Google Play services and returned to the app.
      */
     fun mapLost(){
-
+        var leTruc: String = "Super"
     }
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
