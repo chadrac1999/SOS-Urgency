@@ -1,15 +1,14 @@
-package com.example.hsamuel.urgency
+package com.example.hsamuel.urgency.Urgences
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import android.widget.TextView
+import com.example.hsamuel.urgency.R
 
 class UrgencesType : AppCompatActivity() {
+
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
@@ -21,7 +20,7 @@ class UrgencesType : AppCompatActivity() {
 
         itemData()
 
-        viewAdapter = ItemAdapter(urgencyList)
+        viewAdapter = ItemAdapter(urgencyList, applicationContext)
 
         recyclerView = findViewById(R.id.recyclerView)
 
@@ -31,6 +30,7 @@ class UrgencesType : AppCompatActivity() {
 
             // specify an viewAdapter (see also next example)
             recyclerView.adapter = viewAdapter
+
 
 
     }
@@ -50,6 +50,9 @@ class UrgencesType : AppCompatActivity() {
 
         urgenceItem = Model("Evanouissement", R.drawable.evanouissement)
         urgencyList.add(urgenceItem)
+
     }
+
+
 
 }

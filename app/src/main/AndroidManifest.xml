@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -30,19 +31,28 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
-        <activity android:name=".UrgencesType"/>
+            android:name=".Maps.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Urgences.UrgencesType" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".Urgences.MenuActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarrouselActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Urgences.UrgenceDetailsActivity"
+            android:label="@string/app_name"/>
+        <activity android:name=".Services.ServicesActivity"
+            android:label="@string/app_name"/>
     </application>
 
 </manifest>
