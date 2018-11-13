@@ -3,19 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.hsamuel.urgency.Urgences.UrgencesType"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_menu"
-    tools:openDrawer="start">
+    tools:context="com.example.hsamuel.urgency.Urgences.MenuActivity"
+    tools:showIn="@layout/app_bar_menu">
 
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:scrollbars="vertical"
+    <FrameLayout
+        android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem ="@layout/ugence_item"/>
+        android:layout_height="match_parent" />
 
 </android.support.constraint.ConstraintLayout>

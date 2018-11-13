@@ -9,7 +9,10 @@
     <string name="action_settings">Settings</string>
 
     <string name="title_activity_carrousel">CarrouselActivity</string>
-    <string name="dummy_button">Dummy Button</string>
+    <string name="textinitial">Sauve des vie grâce à ton smartphone.</string>
+    <string name="text1">Apprend les gestes d\'urgence indispensables, et porte assitance à une personne en danger.</string>
+    <string name="text2">Annuiaire des services d\'urgence et des ambulances </string>
+    <string name="text3">Retrouve des hôpitaux proches de toi grâce à la géolocalisation</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="pref_name">My Pref</string>
     <string name="prev_key">My Key</string>

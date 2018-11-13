@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.View
+import android.widget.Toast
 import com.example.hsamuel.urgency.R
 
 class UrgencesType : AppCompatActivity() {
@@ -14,13 +16,14 @@ class UrgencesType : AppCompatActivity() {
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private val urgencyList = ArrayList<Model>()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_urgences_type)
 
         itemData()
 
-        viewAdapter = ItemAdapter(urgencyList, applicationContext)
+        viewAdapter = ItemAdapter(urgencyList)
 
         recyclerView = findViewById(R.id.recyclerView)
 
@@ -31,9 +34,16 @@ class UrgencesType : AppCompatActivity() {
             // specify an viewAdapter (see also next example)
             recyclerView.adapter = viewAdapter
 
+        recyclerView.addOnItemClickListener(object: OnItemClickListener {
+            override fun onItemClicked(position: Int, view: View) {
+                Toast.makeText(this@UrgencesType, "Click", Toast.LENGTH_SHORT).show()
 
+            }
+        })
 
     }
+
+
 
     fun itemData(){
         var urgenceItem = Model("Accident de Circulation", R.drawable.respiratoire)
@@ -53,6 +63,23 @@ class UrgencesType : AppCompatActivity() {
 
     }
 
+    interface OnItemClickListener {
+        fun onItemClicked(position: Int, view: View)
+    }
 
+    fun RecyclerView.addOnItemClickListener(onClickListener: OnItemClickListener) {
+        this.addOnChildAttachStateChangeListener(object: RecyclerView.OnChildAttachStateChangeListener {
+            override fun onChildViewDetachedFromWindow(view: View?) {
+                view?.setOnClickListener(null)
+            }
+
+            override fun onChildViewAttachedToWindow(view: View?) {
+                view?.setOnClickListener({
+                    val holder = getChildViewHolder(view)
+                    onClickListener.onItemClicked(holder.adapterPosition, view)
+                })
+            }
+        })
+    }
 
 }
