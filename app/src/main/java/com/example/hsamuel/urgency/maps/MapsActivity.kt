@@ -1,4 +1,4 @@
-package com.example.hsamuel.urgency.Maps
+package com.example.hsamuel.urgency.maps
 
 import android.content.pm.PackageManager
 import android.location.Address

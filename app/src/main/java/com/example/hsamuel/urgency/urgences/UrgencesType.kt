@@ -1,48 +1,48 @@
-package com.example.hsamuel.urgency.Urgences
+package com.example.hsamuel.urgency.urgences
+
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import android.support.v4.app.Fragment
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import com.example.hsamuel.urgency.R
 
-class UrgencesType : AppCompatActivity() {
+class UrgencesType: Fragment() {
 
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private val urgencyList = ArrayList<Model>()
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_urgences_type)
-
-        itemData()
-
-        viewAdapter = ItemAdapter(urgencyList)
-
-        recyclerView = findViewById(R.id.recyclerView)
-
-            // use a linear layout manager
-            recyclerView.layoutManager = LinearLayoutManager(this)
-            recyclerView.itemAnimator = DefaultItemAnimator()
-
-            // specify an viewAdapter (see also next example)
-            recyclerView.adapter = viewAdapter
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val v= inflater.inflate(R.layout.activity_urgences_type, container, false)
+        recyclerView = v.findViewById<RecyclerView>(R.id.recyclerView) as RecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(activity)
+        recyclerView.itemAnimator = DefaultItemAnimator()
+        recyclerView.adapter = ItemAdapter(urgencyList)
 
         recyclerView.addOnItemClickListener(object: OnItemClickListener {
             override fun onItemClicked(position: Int, view: View) {
-                Toast.makeText(this@UrgencesType, "Click", Toast.LENGTH_SHORT).show()
-
+                Toast.makeText(activity, "Click", Toast.LENGTH_SHORT).show()
             }
         })
 
+        return v
     }
 
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        itemData()
+
+
+    }
 
 
     fun itemData(){

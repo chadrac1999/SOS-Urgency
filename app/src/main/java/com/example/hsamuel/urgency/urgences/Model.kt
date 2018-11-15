@@ -1,4 +1,4 @@
-package com.example.hsamuel.urgency.Urgences
+package com.example.hsamuel.urgency.urgences
 
 import android.os.Parcel
 import android.os.Parcelable

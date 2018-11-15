@@ -18,4 +18,5 @@
     <string name="prev_key">My Key</string>
     <string name="button_next">Suivant</string>
     <string name="button_start">Bienvenue</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
 </resources>

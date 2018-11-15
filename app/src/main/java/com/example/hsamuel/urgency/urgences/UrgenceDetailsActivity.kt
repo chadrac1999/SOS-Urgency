@@ -1,4 +1,4 @@
-package com.example.hsamuel.urgency.Urgences
+package com.example.hsamuel.urgency.urgences
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

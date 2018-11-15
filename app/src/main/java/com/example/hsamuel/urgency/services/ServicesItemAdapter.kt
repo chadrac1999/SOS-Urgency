@@ -1,4 +1,4 @@
-package com.example.hsamuel.urgency.Services
+package com.example.hsamuel.urgency.services
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater

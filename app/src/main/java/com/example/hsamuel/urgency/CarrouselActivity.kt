@@ -12,8 +12,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
-import com.example.hsamuel.urgency.Urgences.MenuActivity
-import com.example.hsamuel.urgency.Urgences.PrefManager
+import com.example.hsamuel.urgency.urgences.PrefManager
 
 class CarrouselActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -112,7 +111,7 @@ class CarrouselActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
     private fun loadM(){
-        startActivity(Intent(this, MenuActivity::class.java))
+        startActivity(Intent(this, NavigationActivity::class.java))
         finish()
     }
 }

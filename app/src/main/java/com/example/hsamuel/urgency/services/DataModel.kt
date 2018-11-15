@@ -1,4 +1,4 @@
-package com.example.hsamuel.urgency.Services
+package com.example.hsamuel.urgency.services
 
 /**
  * Created by hsamuel on 07/11/18.

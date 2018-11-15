@@ -1,8 +1,9 @@
-package com.example.hsamuel.urgency.Urgences
+package com.example.hsamuel.urgency.urgences
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import com.example.hsamuel.urgency.NavigationActivity
 import com.example.hsamuel.urgency.R
 
 /**
@@ -38,8 +39,8 @@ class PrefManager {
 
     fun clearPreferences(){
         pref.edit().clear().commit()
-        con.startActivity(Intent(con, MenuActivity::class.java))
-        (con as MenuActivity).finish()
+        con.startActivity(Intent(con, NavigationActivity::class.java))
+        (con as NavigationActivity).finish()
 
     }
 }

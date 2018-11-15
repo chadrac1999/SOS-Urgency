@@ -1,25 +1,28 @@
-package com.example.hsamuel.urgency.Urgences
-
+package com.example.hsamuel.urgency
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.design.widget.Snackbar
+import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.example.hsamuel.urgency.R
-import kotlinx.android.synthetic.main.activity_menu.*
-import kotlinx.android.synthetic.main.app_bar_menu.*
+import com.example.hsamuel.urgency.maps.MapsActivity
+import com.example.hsamuel.urgency.services.ServicesActivity
+import com.example.hsamuel.urgency.urgences.UrgencesType
+import kotlinx.android.synthetic.main.activity_navigation.*
+import kotlinx.android.synthetic.main.app_bar_navigation.*
 
-class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+
+class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_navigation)
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
@@ -33,6 +36,9 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        val fragment: Fragment = UrgencesType()
+        displaySelectedFragment(fragment)
     }
 
     override fun onBackPressed() {
@@ -43,12 +49,9 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-
-
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu, menu)
+        menuInflater.inflate(R.menu.navigation, menu)
         return true
     }
 
@@ -64,33 +67,23 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
+        val fragment: Fragment
         when (item.itemId) {
-            R.id.nav_alert -> {
-                replaceFragmenty(
-                        fragment = List(),
-                        allowStateLoss = true,
-                        containerViewId = R.id.content_frame
-                )
-                title = "Urgences"
-            }
-            R.id.nav_service -> {
-                replaceFragmenty(
-                        fragment = Services(),
-                        allowStateLoss = true,
-                        containerViewId = R.id.content_frame
-                )
-                title = "Annuiaire"
+            R.id.nav_gestes -> {
+                fragment = UrgencesType()
+                displaySelectedFragment(fragment)
 
             }
-            R.id.nav_manage -> {
-                replaceFragmenty(
-                        fragment = Cartes(),
-                        allowStateLoss = true,
-                        containerViewId = R.id.content_frame
-                )
-                title = "Carte"
-            }
+            R.id.nav_annuaire -> {
+                fragment = ServicesActivity()
+                displaySelectedFragment(fragment)
 
+            }
+            R.id.nav_map -> {
+                val intent = Intent(this, MapsActivity::class.java)
+                startActivity(intent)
+
+            }
             R.id.nav_share -> {
                 val intent = Intent()
                 intent.action = Intent.ACTION_SEND
@@ -101,10 +94,15 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_about -> {
 
             }
-
         }
 
-
+        drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    private fun displaySelectedFragment(fragment: Fragment){
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frame, fragment)
+        fragmentTransaction.commit()
     }
 }
