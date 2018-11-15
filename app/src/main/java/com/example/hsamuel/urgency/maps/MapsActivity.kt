@@ -12,6 +12,8 @@ import android.widget.Toast
 import com.example.hsamuel.urgency.R
 import com.google.android.gms.common.api.Status
 import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationCallback
+import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.places.AutocompleteFilter
 import com.google.android.gms.location.places.Place
@@ -39,6 +41,10 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var lastLocation: Location
 
+    private lateinit var locationCallback: LocationCallback
+
+    private lateinit var locationRequest: LocationRequest
+    private var locationUpdateState = false
 
 
 
@@ -163,8 +169,10 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
 
 
     companion object {
+
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1
         private const val PLACE_AUTOCOMPLETE_REQUEST_CODE = 2
+
 
 
     }
