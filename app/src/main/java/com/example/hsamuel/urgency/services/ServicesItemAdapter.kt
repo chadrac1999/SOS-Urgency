@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.hsamuel.urgency.R
 
@@ -31,10 +32,12 @@ class ServicesItemAdapter(private val sItemmodel: ArrayList<DataModel>) : Recycl
 
         val txtTitle: TextView = v.findViewById(R.id.s_name)
         val txtNum: TextView = v.findViewById(R.id.s_num)
+        val iconView: ImageView = v.findViewById(R.id.s_icon)
 
         fun bindItem(model: DataModel) {
             txtTitle.text = model.sName
             txtNum.text = model.sNumber
+            iconView.setImageResource(model.sIcon)
         }
 
 

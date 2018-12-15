@@ -1,9 +1,11 @@
 package com.example.hsamuel.urgency.maps
 
+import android.content.Context
 import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
 import android.location.Location
+import android.net.ConnectivityManager
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.FragmentActivity
@@ -12,10 +14,9 @@ import android.widget.Toast
 import com.example.hsamuel.urgency.R
 import com.google.android.gms.common.api.Status
 import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationCallback
-import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.places.AutocompleteFilter
+import com.google.android.gms.location.places.GeoDataClient
 import com.google.android.gms.location.places.Place
 import com.google.android.gms.location.places.ui.PlaceAutocomplete
 import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment
@@ -40,24 +41,22 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
     private var map: GoogleMap? = null
     private lateinit var fusedLocationClient: FusedLocationProviderClient
     private lateinit var lastLocation: Location
-
-    private lateinit var locationCallback: LocationCallback
-
-    private lateinit var locationRequest: LocationRequest
-    private var locationUpdateState = false
+    protected lateinit var mGeoDataClient : GeoDataClient
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maps)
+
+        title = "Carte"
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
                 .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-
 
 
 
@@ -87,19 +86,34 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
         map!!.setOnMarkerClickListener(this)
 
 
-        setUpMap()
+        connection()
     }
 
 
+    private fun connection(){
+        val cContext = baseContext.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+        val networkInfo = cContext.activeNetworkInfo
+
+        if (networkInfo != null && networkInfo.isConnected){
+            setUpMap()
+        }
+        else{
+            //Snackbar.SnackbarLayout(applicationContext)
+            Toast.makeText(this, "Veuillez vérifier votre connexion internet!", Toast.LENGTH_SHORT).show()
+            this.finish()
+        }
+    }
+
     //The code above checks if the app has been granted the ACCESS_FINE_LOCATION permission.
-        private fun setUpMap() {
+    private fun setUpMap() {
 
              if (ActivityCompat.checkSelfPermission(this,
                 android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
                     arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
             return
-            }
+             }
 
         // isMyLocationEnabled = true enables the my-location layer which draws a light blue dot on the user’s location.
         // It also adds a button to the map that, when tapped, centers the map on the user’s location.
@@ -117,8 +131,8 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
                 map!!.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 12f))
                 }
             }
-        }
-        private fun placeMarkerOnMap(location: LatLng) {
+    }
+    private fun placeMarkerOnMap(location: LatLng) {
         // Create a MarkerOptions object and sets the user’s
         // current location as the position for the marker
         val markerOptions = MarkerOptions().position(location)
@@ -130,13 +144,13 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMarkerC
 
         // Add the marker to the map
         map!!.addMarker(markerOptions)
-        }
+    }
 
 
     private fun getAddress(latLng: LatLng): String {
         //The Geocoder object turn a latitude and longitude coordinate into an address and vice versa.
         val geocoder = Geocoder(this)
-        val addresses: List<Address>?
+        val addresses: List<android.location.Address>?
         val address: Address?
         var addressText = ""
 

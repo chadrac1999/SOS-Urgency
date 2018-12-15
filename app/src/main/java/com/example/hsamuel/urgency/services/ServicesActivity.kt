@@ -13,20 +13,20 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import com.example.hsamuel.urgency.R
 
 
-class ServicesActivity: Fragment(){
+class ServicesActivity: Fragment() {
 
     private lateinit var recyclerView1: RecyclerView
 
-
     private val servicesList = ArrayList<DataModel>()
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v= inflater.inflate(R.layout.activity_urgences_type, container, false)
+        activity!!.title = "Annuaire"
         recyclerView1 = v.findViewById<RecyclerView>(R.id.recyclerView) as RecyclerView
         recyclerView1.layoutManager = LinearLayoutManager(activity)
         recyclerView1.itemAnimator = DefaultItemAnimator()
@@ -34,8 +34,8 @@ class ServicesActivity: Fragment(){
 
         recyclerView1.addOnItemClickListener(object: OnItemClickListener {
             override fun onItemClicked(position: Int, view: View) {
-                val numero = v.findViewById<TextView>(R.id.s_num) as TextView
-                var number = numero.text.toString().trim()
+
+                    val number = servicesList[position].sNumber
 
                 if (ContextCompat.checkSelfPermission(activity!!.applicationContext, Manifest.permission.CALL_PHONE)
                         != PackageManager.PERMISSION_GRANTED){
@@ -54,40 +54,40 @@ class ServicesActivity: Fragment(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         list1()
-
     }
+
 
 
     fun list1(){
-        var serviceItem = DataModel("Les Pompiers", "119")
+        var serviceItem = DataModel("Les Pompiers", "119", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("SAMU", "65290343")
+        serviceItem = DataModel("SAMU", "65290343", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("Autre", "000")
+        serviceItem = DataModel("Autre", "000", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("Autre", "000")
+        serviceItem = DataModel("Autre", "000", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("Autre", "000")
+        serviceItem = DataModel("Autre", "000", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("Les Cocotiers", "65290343")
+        serviceItem = DataModel("Les Cocotiers", "65290343", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("Saint Anne", "65290343")
+        serviceItem = DataModel("Saint Anne", "65290343", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("St Luc", "65290343")
+        serviceItem = DataModel("St Luc", "65290343", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
 
-        serviceItem = DataModel("La Gallilé", "65290343")
+        serviceItem = DataModel("La Gallilé", "65290343", R.drawable.ic_local_hospital_black_24dp)
         servicesList.add(serviceItem)
     }
+
 
 
     interface OnItemClickListener {

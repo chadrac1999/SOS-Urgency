@@ -21,6 +21,7 @@ class UrgencesType: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v= inflater.inflate(R.layout.activity_urgences_type, container, false)
+        activity!!.title = "Gestes d'urgence"
         recyclerView = v.findViewById<RecyclerView>(R.id.recyclerView) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(activity)
         recyclerView.itemAnimator = DefaultItemAnimator()
@@ -38,10 +39,7 @@ class UrgencesType: Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         itemData()
-
-
     }
 
 

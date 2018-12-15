@@ -2,13 +2,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@drawable/aide"
     style="?metaButtonBarStyle"
     android:orientation="horizontal"
     tools:ignore="UselessParent"
     tools:context="com.example.hsamuel.urgency.CarrouselActivity">
 
-        <android.support.v4.view.ViewPager
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#cf911717">
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -20,8 +27,8 @@
             android:layout_height="1dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="?attr/actionBarSize"
-            android:alpha="0.30"
-            android:background="@color/colorPrimaryDark" />
+            android:alpha="0.40"
+            android:background="@android:color/white" />
 
         <LinearLayout
             android:id="@+id/dots"
@@ -42,8 +49,8 @@
                 android:text="@string/button_next"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:textColor="@color/colorPrimary"
-                />
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
 
 
 </RelativeLayout>

@@ -10,7 +10,7 @@
         android:width="8dp"/>
 
     <solid
-        android:color="@color/colorPrimaryDark"/>
+        android:color="@android:color/white"/>
 
 
 

@@ -3,7 +3,6 @@ package com.example.hsamuel.urgency
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
-import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
@@ -25,10 +24,6 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         setContentView(R.layout.activity_navigation)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
 
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -41,11 +36,14 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         displaySelectedFragment(fragment)
     }
 
+
     override fun onBackPressed() {
+
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
             drawer_layout.closeDrawer(GravityCompat.START)
         } else {
             super.onBackPressed()
+
         }
     }
 
@@ -60,9 +58,13 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
+            R.id.action_settings ->{
+                val intent = Intent(this, AproposActivity::class.java)
+                startActivity(intent)
+            }
+
         }
+        return true
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -72,7 +74,6 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
             R.id.nav_gestes -> {
                 fragment = UrgencesType()
                 displaySelectedFragment(fragment)
-
             }
             R.id.nav_annuaire -> {
                 fragment = ServicesActivity()
@@ -83,16 +84,20 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 val intent = Intent(this, MapsActivity::class.java)
                 startActivity(intent)
 
+
             }
             R.id.nav_share -> {
+
                 val intent = Intent()
                 intent.action = Intent.ACTION_SEND
                 intent.putExtra(Intent.EXTRA_STREAM, "This is the text to send")
                 intent.type = "text/plain"
                 startActivity(Intent.createChooser(intent, "Partager avec"))
             }
-            R.id.nav_about -> {
 
+            R.id.nav_about -> {
+                val intent = Intent(this, AproposActivity::class.java)
+                startActivity(intent)
             }
         }
 
@@ -102,7 +107,6 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
     private fun displaySelectedFragment(fragment: Fragment){
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame, fragment)
-        fragmentTransaction.commit()
+        fragmentTransaction.replace(R.id.frame, fragment).addToBackStack(null).commit()
     }
 }

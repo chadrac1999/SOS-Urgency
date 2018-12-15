@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hsamuel.urgency.AproposActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_60dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/kodora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_icon"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kodora"
+            android:textSize="@dimen/dimen_20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:orientation="vertical"
+        android:layout_below="@id/top">
+
+        <TextView
+            android:id="@+id/btnrate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="@string/note"
+            android:textSize="@dimen/dimen_20sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:alpha="0.20"
+            android:background="@color/black_overlay" />
+
+        <TextView
+            android:id="@+id/btnfollow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="@string/follow"
+            android:textSize="@dimen/dimen_20sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:alpha="0.20"
+            android:background="@color/black_overlay" />
+
+        <TextView
+            android:id="@+id/sharetxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="Partager avec vos amis"
+            android:textSize="@dimen/dimen_20sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:alpha="0.20"
+            android:background="@color/black_overlay" />
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="Confidencialité"
+            android:textSize="@dimen/dimen_20sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:alpha="0.20"
+            android:background="@color/black_overlay" />
+
+
+        <TextView
+            android:id="@+id/btnmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="Email"
+            android:textSize="@dimen/dimen_20sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:alpha="0.20"
+            android:background="@color/black_overlay" />
+
+    </LinearLayout>
+
+</RelativeLayout>

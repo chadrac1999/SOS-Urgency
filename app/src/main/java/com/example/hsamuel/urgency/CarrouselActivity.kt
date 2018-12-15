@@ -111,7 +111,7 @@ class CarrouselActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
     private fun loadM(){
-        startActivity(Intent(this, NavigationActivity::class.java))
+        startActivity(Intent(this, SplashActivity::class.java))
         finish()
     }
 }
