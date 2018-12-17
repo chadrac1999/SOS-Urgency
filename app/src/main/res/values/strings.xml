@@ -1,0 +1,518 @@
+<resources>
+    <string name="app_name">SOS Urgency</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_carrousel">CarrouselActivity</string>
+    <string name="textinitial">Sauve des vie grâce à ton smartphone.</string>
+    <string name="text1">Apprend les gestes d\'urgence indispensables, et porte assitance à une personne en danger.</string>
+    <string name="text2">Annuiaire des services d\'urgence et des ambulances </string>
+    <string name="text3">Retrouve des hôpitaux proches de toi grâce à la géolocalisation</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="pref_name">My Pref</string>
+    <string name="prev_key">My Key</string>
+    <string name="button_next">Suivant</string>
+    <string name="button_start">Bienvenue</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <!-- The gestures of scours to adopt -->
+
+    <!-- Accident de circulation -->
+    <string name="etap1_title"> Eviter le suraccident</string>
+    <string name="etap1_desc">
+        &#8226; Faites ralentir la circulation (dans les 2 sens si cela est possible et nécessaire) par des témoins placés sur les bas-côtés de la route.\n\n
+
+        &#8226; Demandez aux témoins qui ne peuvent se rendre utile, de circuler (la concentration d\'un nombre important de véhicules arrêtés à un même endroit ne pouvant être qu\'une source de danger).\n\n
+
+        &#8226; Demandez aux témoins de ne pas fumer à proximité de l\'accident (les réservoirs d\'essence des véhicules pouvant être endommagés).\n\n
+
+        &#8226; Coupez le contact des véhicules accidentés et serrez leur frein à main.\n\n
+    </string>
+
+    <string name="etap2_title"> Evaluer l\'état des victimes</string>
+    <string name="etap2_desc">Lors de cette phase, lvous devez  être extrêmement vigilant puisque les informations qui seront ensuite fournies aux secours devront être les plus précises possibles.\n
+        Pour évaluer l\'état de chacune des victimes, il est fondamental de:\n\n
+        &#8226; vérifier si la victime est consciente ou non\n\n
+    &#8226; vérifier si la victime est en capacité de respirer\n\n
+    &#8226; regarder si des traces de saignement sont visibles\n\n
+    &#8226; si la victime répond, essayer de comprendre ce qu\'elle ressent et ce qui la fait souffrir\n
+    </string>
+
+    <string name="etap3_title"> Alerter ou faire alerter les secours </string>
+    <string name="etap3_desc">Après avoir évalué rapidement l\'état et la situation des victimes alertez ou faites alerter les secours :\n Samu, Pompier ou Police (vous devez leur donner un maximum de renseignements, pour qu\'ils puissent envoyer des moyens techniques et humains adaptés à la situation).</string>
+
+    <string name="etap4_title"> Secourir les blessés</string>
+    <string name="etap4_desc">En attendant l\'arrivée des secours vous devez prendre des décisions sur comment secourir les blessés\n
+        Ce qu\'il est possible de faire:\n\n
+        &#8226; il faut sassurer que la personne accidentée puisse respirer et que les voies respiratoires soient dégagées\n\n
+    &#8226; il faut également rassurer la victime en lui parlant. Il faut également éviter de parler de ses blessures, pour ne pas la faire paniquer\n\n
+    &#8226; il est possible de couvrir la victime à l\'aide d\'une couverture de survie isothermique quelle que soit la température extérieure (une victime en état de choc a toujours froid)\n\n
+    &#8226; si la victime saigne abondamment, il ne faut pas hésiter à compresser la plaie afin de stopper l\'hémorragie. Pour cela, il convient d\’utiliser une serviette ou un tissus propre\n\n
+    &#8226; dans le cas où la victime est consciente, il faut faire le maximum pour le garder en éveil
+        </string>
+
+    <string name="etap5_title"> Des erreurs à éviter</string>
+    <string name="etap5_desc">Après un accident, il est primordial d\'éviter certains gestes pour éviter des complications éventuelles ou même le décès de la victime\n
+        Pour ce faire:\n\n
+        &#8226; il ne faut jamais tenter de déplacer une victime, sauf s\’il y a un risque imminent de noyade ou d\'incendie. Déplacer une victime risquerait d\'aggraver une blessure déjà existante\n\n
+    &#8226; il ne faut jamais donner à boire à une victime même si cette dernière le réclame. En effet, certaines opérations doivent avoir lieu à jeun, il faut rester vigilant\n\n
+    &#8226; si un motard est également impliqué dans l\'accident il ne faut jamais lui retirer son casque. Il faut également le dissuader de le faire lui-même. Si des vertèbres sont touchées, il existe un risque important d\’aggravation des séquelles.\n\n
+    &#8226; enfin si la victime répond, essayer de comprendre ce qu\'elle ressent et ce qui la fait souffrir. Ne laissez jamais un blessé inconscient dans une position où il risque de s\'étouffer avec son sang ou ses vomissements; placez-le en position latérale de sécurité comme le montre l\'image ci-dessus.\n
+    </string>
+
+    <!-- Accident de sport -->
+    <string name="accsp1_title"> Les contusions musculaires</string>
+    <string name="accsp1_desc">
+        Ces lésions musculaires sont consécutives à un traumatisme direct et sans plaie. Une douleur vive, des mouvements "limités", l\'apparition d\'un hématome : ces signes doivent vous alerter.
+        La conduite à tenir est simple : appliquer du froid (aérosols de "froid", torchons ou vessie de caoutchouc remplis de glace.) et rester au repos.
+    </string>
+
+    <string name="accsp2_title">Les élongations musculaires</string>
+    <string name="accsp2_desc">
+        Cette lésion musculaire, consécutive à l\'allongement d\'un muscle au-delà de ses possibilités d\'extension, se traduit essentiellement par une douleur localisée.
+        Cesser alors l\'activité sportive et appliquer du froid.
+    </string>
+
+    <string name="accsp3_title">La rupture musculaire ou claquage</string>
+    <string name="accsp3_desc">
+        Ces lésions musculaires sont consécutives à un traumatisme direct et sans plaie. Une douleur vive, des mouvements "limités", l\'apparition d\'un hématome : ces signes doivent vous alerter.
+        La conduite à tenir est simple : appliquer du froid (aérosols de "froid", torchons ou vessie de caoutchouc remplis de glace.) et rester au repos.
+    </string>
+
+    <string name="accsp4_title">Les courbatures</string>
+    <string name="accsp4_desc">
+        Les courbatures sont une réaction normale à l\'effort musculaire. Elles entraînent spontanément une baisse notable de l\'activité physique.
+        On préconise alors un réchauffement, par bain chaud par exemple.\n\n
+        La meilleure prévention réside dans l\'entraînement et l\'exercice musculaire régulier. Surmenage musculaire et mauvaise préparation physique sont, rappelons-le, les principales causes d\'accidents sportifs d\'origine non traumatique.
+    </string>
+
+    <!-- Accident de cérébraux -->
+    <string name="acccere1_title">Comment reconnaître un accident vasculaire cérébral ?</string>
+    <string name="acccere1_desc">
+        La prévention des accidents vasculaires cérébraux est la même que celle des accidents cardiaques :\n\n
+        &#8226; Un mal de tête brutal et intense ;\n\n
+        &#8226; Une difficulté à bouger un ou plusieurs membres ;\n\n
+        &#8226; Une paralysie complète ;\n\n
+        &#8226; Des troubles de la parole ;\n\n
+        &#8226; Un état de confusion ou d\'agitation ;\n\n
+        &#8226; Des troubles de la conscience, en cas d\'accident grave.
+    </string>
+
+    <string name="acccere2_title">Que faire ?</string>
+    <string name="acccere2_desc">
+        Si la victime est consciente, rassurez-la et demandez-lui :\n\n
+        &#8226; Surveillez votre alimentation ;\n\n
+        &#8226; Ne fumez pas ou au moins limitez votre consommation de cigarettes ;\n\n
+        &#8226; Suivez le traitement prescrit par votre médecin traitant en particulier en cas ;\n\n
+        &#8226; D\'hypertension artérielle.
+    </string>
+
+    <string name="acccere3_title">Comment éviter l\'accident cérébral ?</string>
+    <string name="acccere3_desc">
+        Si la victime est consciente, rassurez-la et demandez-lui :\n\n
+        &#8226; Si elle suit un traitement ;\n\n
+        &#8226; Si elle a une maladie ;\n\n
+        &#8226; Depuis quand elle est sujette à ce malaise.\n\n
+        Après avoir recueilli ces informations, appelez les secours d\'urgence et assurez vous de leur donner les bonnes informations
+    </string>
+
+    <!-- AVC chez les enfants -->
+    <string name="avc1_title">Les symptômes</string>
+    <string name="avc1_desc">
+        Pour prendre en charge l\'AVC, encore faut-il l\'avoir repéré. Le grand enfant présente des signes assez semblables à ceux de l\'adulte :
+        une paralysie ou une diminution de la sensibilité d\'un membre ou d\'un côté du corps ou du visage, des troubles de la parole, des maux de tête, parfois un coma… qui apparaissent brutalement,
+        souvent au réveil. Chez le jeune enfant, on note essentiellement des problèmes moteurs, les troubles de la parole et de la sensibilité pouvant être difficiles à repérer. Le nouveau-né peut convulser et présenter une paralysie. Entre 5 et 10 % des enfants décèdent en phase aiguë.
+    </string>
+
+    <string name="avc2_title">Que faire ?</string>
+    <string name="avc2_desc">
+        Contactez les secours le plus vite possible et communiquez leur la meilleures informations ou si vous avez les moyens, amener l\'enfant aux urgence le plus vite possible
+    </string>
+
+    <!-- Etouffement adulte -->
+    <string name="etouf_adul1_title">Comment réagir ?</string>
+    <string name="etouf_adul1_desc">
+        Si la victime respire encore, demandez-lui simplement de tousser.\n
+        Si la victime ne respire plus ou arrête de respirer et de tousser :\n\n
+        &#8226; Placez-vous sur le côté et légèrement en arrière de la victime ;\n\n
+
+        &#8226; Soutenez son thorax avec une main et penchez-la suffisament en avant ;\n\n
+
+        &#8226; Donnez-lui cinq tapes sèches dans le dos, entre les deux omoplates, avec le plat de l\'autre main ouverte.\n\n
+    </string>
+
+    <string name="etouf_adul2_title">Si les tapes dans le dos sont inefficaces, réaliser des compressions abdominales.</string>
+    <string name="etouf_adul2_desc">
+        &#8226; Placez-vous derrière la victime, contre son dos, passez vos bras sous les siens, de part et d\'autre de la partie supérieure de son abdomen ;\n\n
+
+        &#8226; Assurez-vous que la victime est bien penchée en avant, pour que l\'obstacle puisse être évacué par la bouche et non retourner dans les voies aériennes ;\n\n
+
+        &#8226; Mettez le poing sur la partie supérieure de l\'abdomen, au creux de l\'estomac, en dessous du sternum. Ce poing doit être horizontal, le dos de la main tourné vers le haut ;\n\n
+
+        &#8226; Placez l\'autre main sur la première, les avant-bras n\'appuyant pas sur les côtes ;\n\n
+
+        &#8226; Tirez franchement, en exerçant une pression vers l\'arrière et vers le haut ;\n\n
+
+        &#8226; Si nécessaire, répétez cette manoeuvre jusqu\'à cinq reprises ;\n\n
+
+        &#8226; Si le corps étranger n\'est toujours pas rejeté, il peut être resté dans la bouche de la victime. Dans ce cas, il faut le rechercher et le retirer prudemment avec les doigts.\n\n
+    </string>
+
+    <string name="etouf_adul3_title">Si l\'obstruction persiste malgré tout.</string>
+    <string name="etouf_adul3_desc">
+        &#8226; Réalisez à nouveau cinq tapes sèches dans le dos, puis cinq compressions abdominales,et ainsi de suite.\n\n
+    </string>
+
+    <string name="etouf_adul4_title">Si la victime perd connaissance et la ventilation spontanée ne repart pas.</string>
+    <string name="etouf_adul4_desc">
+        &#8226; La perte de connaissance peut entraîner un relâchement des muscles autour du larynx et permettre à l\'air de passer vers les poumons ;\n\n
+
+        &#8226; Si la victime perd connaissance et présente un arrêt ventilatoire, effectuez les gestes de secours propres à un arrêt ventilatoire (bouche à bouche).
+    </string>
+
+    <!-- Etouffement enfant -->
+    <string name="etouf_enf1_title">Réalisez cinq tapes dans le dos</string>
+    <string name="etouf_enf1_desc">
+        &#8226; Tenez l\'enfant tête penchée en avant, pour que sa tête soit plus basse que son thorax.. \n\n
+
+        &#8226; Donnez-lui cinq tapes dans le dos, entre les deux omoplates, avec le plat de la main ouverte ;\n\n
+
+        &#8226; retirez le corps étranger de la bouche de l\’enfant\n\n
+
+        &#8226; Si cette technique est inefficace, réalisez cinq compressions de la poitrine.
+    </string>
+
+    <string name="etouf_enf2_title">Réalisez cinq compressions de la poitrine</string>
+    <string name="etouf_enf2_desc">
+        &#8226; Tenez l\'enfant couché, étendu sur le dos, tête penchée en arrière. Si c\'est un nourrisson, couchez-le sur le dos, tête basse sur votre avant bras ;\n\n
+
+        &#8226; Effectuez cinq compressions au niveau de la poitrine. Les compressions doivent être réalisées sur la partie inférieure du sternum, avec le talon d\'une seule main chez l\'enfant et avec deux doigts chez le nourrisson.\n\n
+
+        &#8226; retirez le corps étranger de la bouche de l\’enfant\n\n
+    </string>
+
+    <string name="etouf_enf3_title">Si l\'enfant respire</string>
+    <string name="etouf_enf3_desc">
+        &#8226; Continuez à surveiller sa respiration (elle doit être régulière et compter au moins douze ventilations par minute chez l\'enfant et vingt cinq par minute chez le nourrisson).\n\n
+    </string>
+
+    <string name="etouf_enf4_title">Si les voies aériennes de la victime sont toujours obstruées</string>
+    <string name="etouf_enf4_desc">
+        &#8226; Recommencez le cycle précédent, en remplaçant les compressions de la poitrine par des compressions abdominales comme chez l\'adulte ;\n\n
+
+        &#8226; Répétez le cycle, en alternant compressions de la poitrine et compressions abdominales ;\n\n
+
+        &#8226; Continuez jusqu\'à obtenir la désobstruction des voies aériennes et la reprise d\'une ventilation spontanée de l\'enfant.\n\n
+    </string>
+
+    <!-- Etouffement nourisson -->
+    <string name="etouf_nour_title">Pour un nourrisson de moins d\'un an</string>
+    <string name="etouf_nour_desc">
+        Les compressions abdominales chez le nourrisson ne sont pas recommandées, car elles peuvent entraîner des lésions des organes de l\'abdomen.\n\n
+        &#8226; Réalisez des cycles de cinq tapes sèches dans le dos et de cinq compressions de la poitrine seulement ;\n\n
+
+        &#8226; Continuez jusqu\'à obtenir la désobstruction des voies aériennes et la reprise d\'une ventilation spontanée du nourrisson.
+    </string>
+
+    <!-- Malaise Cardiaque -->
+    <string name="mal_card1_title">Les symptômes</string>
+    <string name="mal_card1_desc">
+        Le malaise cardiaque se traduit le plus souvent par :\n\n
+        &#8226; Une forte douleur "qui serre" la poitrine, et qui peut avoir des irradiations c\'est à dire se déplacer vers les bras, le cou ou le creux de l\'estomac ;\n\n
+
+        &#8226; La victime est souvent angoissée et la douleur peut s\'accompagner d\'essoufflement, de sueurs et/ou de nausées.
+    </string>
+
+    <string name="mal_card2_title">Comment le reconnaît-on ?</string>
+    <string name="mal_card2_desc">
+        La victime a mal dans la poitrine…\n\n
+        Mettez-la, immédiatement, au repos : allongez-la sauf si elle adopte spontanément une autre position (demi-assise, assise…) où elle se sent le mieux…\n
+        Rassurez la victime et demandez-lui :\n\n
+        &#8226; Prenez-vous un traitement ? Est-ce la première fois ?\n\n
+
+        &#8226; Avez-vous une maladie ?\n\n
+
+        &#8226; Depuis quand avez-vous mal ?\n\n
+        Après ces séries de questions, contactez son médécin le plus vite possible et communiquer ces informations.
+    </string>
+
+    <string name="mal_card3_title">Comment l\'éviter ?</string>
+    <string name="mal_card3_desc">
+        Pour ne pas en arriver là :\n\n
+        &#8226; Surveillez votre alimentation ;\n\n
+        &#8226; Ne fumez pas trop ;\n\n
+        &#8226; Effectuez régulièrement une visite de contrôle chez votre médecin traitant ;\n\n
+        &#8226; Suivez les prescriptions de votre médecin et effectuez les examens qu\'il vous prescrit.
+    </string>
+
+    <!-- L'overdose -->
+    <string name="overdose1_title">Comment réagir ?</string>
+    <string name="overdose1_desc">
+        Ce sont les circonstances qui font penser à une overdose.\n\n
+        La victime vient d\'absorber une dose trop importante de toxiques et présente dans un premier temps des troubles de la conscience puis un arrêt ventilatoire qui peut évoluer, en l\'absence de gestes de premiers secours, vers la mort.
+    </string>
+
+    <string name="overdose2_title">Et ensuite ?</string>
+    <string name="overdose2_desc">
+        &#8226; En cas de troubles de la conscience, basculez prudemment la tête en arrière ;\n\n
+        &#8226; Vérifiez la présence de mouvements respiratoires ;\n\n
+        &#8226; Et placez la victime en position latérale de sécurité.
+    </string>
+
+    <string name="overdose3_title">Et enfin ?</string>
+    <string name="overdose3_desc">
+        En présence d\'un arrêt respiratoire, après avoir vérifié la présence d\'un pouls carotidien, pratiquez le bouche à bouche.\n\n
+        Dans tous les cas, une surveillance de la victime est obligatoire jusqu'à l\'arrivée des secours médicalisés.
+    </string>
+
+    <!-- La convulsion -->
+    <string name="convulsion1_title">Les symptômes des convulsions</string>
+    <string name="convulsion1_desc">
+        La convulsion survient quand l\’enfant est fiévreux. Sa température corporelle est donc d\’au moins 38° C. Une crise convulsive se manifeste par :\n\n
+        &#8226; Des spasmes (contractions) musculaires symétriques qui secouent tout le corps;\n\n
+        &#8226; Une agitation involontaire des membres, de façon saccadée et symétrique;\n\n
+        &#8226; Une perte de conscience ou une courte absence;\n\n
+        &#8226; Un regard fixe ou des yeux révulsés.
+    </string>
+
+    <string name="convulsion2_title">Que faire en cas de convulsions ?</string>
+    <string name="convulsion2_desc">
+        La convulsion survient quand l\’enfant est fiévreux. Sa température corporelle est donc d\’au moins 38° C. Une crise convulsive se manifeste par :\n\n
+        &#8226; Placez-le en position latérale de sécurité : tournez-le sur le côté, la tête légèrement plus basse que le corps pour empêcher les fausses routes de la salive et l\’étouffement s\’il vomit;\n\n
+        &#8226; Veillez à ce qu\’il ne se blesse pas avec les objets qui l\’entourent, surtout au niveau de la tête (soutenez-la);\n\n
+        &#8226; N\'empêchez pas ses mouvements;\n\n
+        &#8226; N\'essayez pas de lui ouvrir la bouche et n\'y introduisez rien, pas même les doigts (sauf si vous devez retirer de sa bouche un corps étranger comme un aliment ou un jouet);\n\n
+        &#8226; Découvrez-le pour qu\’il ait moins chaud;
+        &#8226; Pensez à noter l\'heure de début de la crise.
+    </string>
+
+    <!-- La crise d'asthme -->
+    <string name="asthme1_title">Les symptômes des convulsions</string>
+    <string name="asthme1_desc">
+        Selon les personnes la crise d\'asthme peut se manifester de différentes manières. Ainsi, on peut ressentir :\n\n
+        &#8226; Des difficultés ou une gène respiratoire, avec une phase d\'expiration très prolongée ;\n\n
+        &#8226; Une respiration sifflante ;\n\n
+        &#8226; Une sensation d\’essoufflement, d\'oppression au niveau de la poitrine ;\n\n
+        &#8226; Une toux sèche.
+    </string>
+
+    <string name="asthme2_title">Les prmiers gestes d\'urgence</string>
+    <string name="asthme2_desc">
+        &#8226; Gardez votre calme et rassurez la victime. En effet, l\'angoisse ne peut qu\'aggraver la crise ;\n\n
+        &#8226; Mettez la victime dans la position où elle se sent le mieux (souvent une position assise) et desserrez ses vêtements. Surtout, il ne faut pas allonger un malade qui présente une crise d\'asthme ;\n\n
+        &#8226; Demandez-lui de respirer lentement et profondément ;\n\n
+        &#8226; Demandez-lui si elle prend habituellement des médicaments (BDCA), procurez-les lui et facilitez leur auto-administration ;\n\n
+        &#8226; S\'il s\'agit d\'une première crise, la victime n\'a aucun médicament. Dans ce cas, ne lui donnez aucun médicament sans prescription médicale et appelez son médecin traitant\n\n
+        &#8226; Conformez-vous ensuite aux conseils qui vous seront donnés par le médecin.
+    </string>
+
+    <!-- Saignement simple -->
+    <string name="saig_simpl1_title">Compression manuelle</string>
+    <string name="saig_simpl1_desc">
+        Pour arrêter un saignement, vous devez :\n\n
+        &#8226; Comprimez immédiatement la plaie avec la paume de la main ;\n\n
+        &#8226; Allongez la victime à plat dos ;\n\n
+        &#8226; Maintenez la compression manuelle, jusqu\'à son relais par un pansement compressif ou par les secours ;\n\n
+        &#8226; Faîtes alerter les secours par un témoin ;\n\n
+        &#8226; Couvrez, surveillez et réconfortez la victime.
+    </string>
+
+    <string name="saig_simpl2_title">Pansement compressif</string>
+    <string name="saig_simpl2_desc">
+        Si vous êtes isolé, et s\'il est nécessaire de vous libérer de l\'appui manuel, vous devez pratiquer un pansement compressif.\n\n
+        Pour cela :\n\n
+        &#8226; Remplacez votre compression manuelle par un pansement constitué d\'un linge propre (mouchoir, foulard) plié et maintenu par un lien large (foulard, cravate…) ;\n\n
+        &#8226; sans relâcher la compression, mettez en place le pansement compressif ;\n\n
+        &#8226; Alertez les secours ;\n\n
+        &#8226; En attendant les secours, couvrez, surveillez et réconfortez la victime.\n\n
+    </string>
+
+    <!-- Saignement complexe -->
+    <string name="saig_compl1_title">Hémorragie du membre supérieur</string>
+    <string name="saig_compl1_desc">
+        Comprimez l\'artère qui descend le long de la face interne du bras à l\'aide de votre pouce, en l\'écrasant sur l\'humérus (os du bras).\n\n
+        Cette technique permet l\'arrêt de toute hémorragie grave de la partie inférieure du bras.
+    </string>
+
+    <string name="saig_compl2_title">Hémorragie du membre inférieurr</string>
+    <string name="saig_compl2_desc">
+        Comprimez l\'artère du membre inférieur au pli de l\'aine, à l\'aide du poing, en conservant le bras tendu, et en l\'écrasant sur le fémur (os de la cuisse).\n\n
+        Cette technique permet l\'arrêt de toute hémorragie grave de la cuisse et de la jambe.
+    </string>
+
+    <string name="saig_compl3_title">Le garrot</string>
+    <string name="saig_compl3_desc">
+        Lorsque le point de compression est impossible à maintenir du fait de la nécessité d\'aller chercher des secours (en cas d\'isolement) ou de s\'occuper de plusieurs victimes, la mise en place d\'un garrot peut s\'avérer nécessaire.       \n\n
+        Cette technique permet l\'arrêt de toute hémorragie grave de la cuisse et de la jambe.\n\n
+        &#8226; Le garrot doit être posé à la racine d\'un membre (bras ou cuisse).\n\n
+        &#8226; Utilisez un lien large et serrez fortement ;\n\n
+        &#8226; Disposez le lien en double sous le membre blessé, alors que vous maintenez le point de compression ;\n\n
+        &#8226; Passez votre main libre dans la boucle et saisissez l\'une des extrémités pour la nouer avec l\'autre.\n\n
+        En attendant les secours\n\n
+        &#8226; Surélevez les jambes de la victime allongée ;\n\n
+        &#8226; Couvrez, rassurez et surveillez-la.
+    </string>
+
+    <!-- Plaie grave -->
+    <string name="plai_grav1_title">Plaie de l\'abdomen</string>
+    <string name="plai_grab1_desc">
+         En attendant les services d\'urgence :\n\n
+        &#8226; Allongez la victime (afin d\'éviter l\'aggravation d\'une possible détresse circulatoire due à une hémorragie interne) ;\n\n
+        &#8226; Appliquez des compresses stériles ou à défaut un linge très propre au niveau de la plaie ;\n\n
+        &#8226; Faites fléchir les genoux de la victime, et placez une couverture afin de les caler. Cette position relâche les muscles de l\'abdomen et diminue la pression sur la plaie ;\n\n
+        &#8226; Surveillez la victime et rassurez-la.
+    </string>
+
+    <string name="plai_grav2_title">Plaie du thorax</string>
+    <string name="plai_grab2_desc">
+         En attendant les services d\'urgence :\n\n
+        &#8226; Placez la victime dans la position où elle se sent le mieux, en général en position demi-assise ou couchée sur le côté blessé avec la tête et les épaules surélevées ;\n\n
+        &#8226; Recouvrez la plaie de compresses stériles ou à défaut d\'un linge très propre ;\n\n
+        &#8226; Surveillez la ventilation (respiration) de la victime.
+    </string>
+
+    <string name="plai_grav3_title">Plaie du thorax</string>
+    <string name="plai_grab3_desc">
+    &#8226; Devant toute plaie grave, il ne faut jamais essayer de retirer un corps étranger présent dans la plaie ;\n\n
+    &#8226; Ces plaies peuvent s\'accompagner d\'une hémorragie, le plus souvent interne, que seuls les secours médicalisés pourront prendre en charge ;\n\n
+    &#8226; C\'est pourquoi toute plaie grave doit être considérée comme une urgence vitale.
+    </string>
+
+    <!-- Plaie simple -->
+    <string name="plai_simple_title">Comment réagir ?</string>
+    <string name="plai_simple_desc">
+    Devant toute plaie, quelle qu\'en soit sa nature, il est important de respecter la conduite à tenir suivante.\n\n
+    &#8226; Tout d\'abord lavez-vous soigneusement les mains, à l\'eau et au savon ;\n\n
+    &#8226; Puis appliquez une solution antiseptiquecutanée non colorée (que vous demanderezà votre pharmacien) ;\n\n
+        &#8226; Evitez de toucher la plaie avec vos doigts lors des soins ;\n\n
+    &#8226; Evitez de toucher la plaie avec vos doigts lors des soins ;\n\n
+        &#8226; Terminez en plaçant un pansement prédécoupé (ou une compresse stérile)et de la maille élastique, que vouschangerez tous les jours.
+    </string>
+
+    <!-- Saignement nez -->
+    <string name="saig_nez1_title">Les causes</string>
+    <string name="saig_nez_1_desc">
+    &#8226; Une inflammation de la muqueuse du nez (en cas d\'allergie par exemple);\n\n
+    &#8226; La sécheresse de l\'air; \n\n
+    &#8226; C\'est pourquoi toute plaie grave doit être considérée comme une urgence vitale.
+    </string>
+
+    <string name="saig_nez2_title">Que dois-je faire ?</string>
+    <string name="saig_nez_2_desc">
+    Le saignement de nez survient, le plus généralement, de manière spontanée ou après un traumatisme direct sur le nez. La conduite à tenir est simple, il suffit d\'appuyer avec son doigt sur la narine qui saigne pendant au moins 10 minutes, en maintenant la tête penchée en avant.\n\n
+    Pour le confort de la victime, il est souhaitable de la faire s\'asseoir, le coude calé sur une table ou sur l\'accoudoir d'un fauteuil. En relais de l\'appui digital, on peut utiliser des petites ouates hémostatiques et cicatrisantes vendues en pharmacie. L\'utilisation d'un glaçon posé à la racine du nez peut également favoriser l\'arrêt du saignement.
+    Si malgré ces premiers gestes, le saignement se poursuit, appelez le médecin.
+    </string>
+
+    <!-- Brûlures -->
+    <string name="brulure_title">Comment réagir ?</string>
+    <string name="brulure_desc">
+    Face à une brûlure simple, dont l\'étendue est inférieure à une demi-paume de la main de la victime, qui n\'est pas profonde et qui n\'est pas située près d\'un orifice naturel - après avoir supprimé l\'agent de la brûlure et vous être assuré d\'être en sécurité, vous devez :\n\n
+    &#8226; Refroidir la brûlure en l\'arrosant à l\'eau froide, pendant au moins 5 minutes ;  \n\n
+    &#8226; Retirer les vêtements éventuels au contact de la brûlure pendant l\'arrosage, à l\'exception de ceux qui adhèrent à la peau ; \n\n
+    &#8226; Protéger éventuellement la brûlure d\'un pansement .
+    </string>
+
+    <!-- Noyade -->
+    <string name="noya_etap1_title">Comment réagir ?</string>
+    <string name="noya_etap1_desc">
+        Si vous assistez à une noyade, ne mettez pas votre vie en danger. Il ne faut jamais mettre une personne en péril pour en sauver une autre. Ainsi, il est préférable de lancer un objet flottant dans la direction de la victime plutôt que de se jeter à l\'eau, si vous ne savez pas bien nager ou si les conditions sont dangereuses.
+        En effet les manœuvres d\'extraction de l\'eau sont difficiles et réservées à des professionnels. Effectuez les gestes de premiers secours une fois la victime sortie de l\'eau. Trois situations se présentent selon le niveau de gravité.\n\n
+        SI LE NOYÉ EST CONSCIENT
+        Déshabillez la victime, ôtez ses vêtements mouillés et réchauffez-la. Appelez le 15 et surveillez la ensuite jusqu\'à l\'arrivée des secours.\n\n
+        SI LE NOYÉ EST INCONSCIENT ET RESPIRE
+        Basculez prudemment la tête du noyé en arrière et le placez en position latérale de sécurité.
+    </string>
+
+    <string name="noya_etap2_title">SI LE NOYÉ EST INCONSCIENT ET NE RESPIRE PLUS</string>
+    <string name="noya_etap2_desc">
+        Prenez le pouls au niveau de la carotide - l\'artère du cou. Si la personne a été sortie rapidement, elle n\'est pas en arrêt cardiaque. Puis débutez immédiatement le bouche-à-bouche ou le bouche-à-bouche-et-nez s\'il s'agit d'un bébé. Dans le même temps, faites donner l\'alerte.\n\n
+        Poursuivez la réanimation jusqu\'à la reprise de la respiration spontanée ou jusqu\'à l\'arrivée des secours.
+    </string>
+
+    <!-- Accouchement inopiné -->
+    <string name="accouch1_title">Comment se déroule un accouchement ?</string>
+    <string name="accouch1_desc">
+        On compte plusieurs phases. Au fur et à mesure que l\'heure de l\'accouchement approche, les contractions, ces douleurs régulières dans le bas du dos, gagnent en intensité et leur fréquence augmente. Puis, le bébé apparaît, est expulsé et intervient enfin la délivrance, à savoir l\'expulsion du placenta.
+    </string>
+
+    <string name="accouch2_title">Et si cela devait vous arriver…</string>
+    <string name="accouch2_desc">
+        &#8226; Ne lui donnez pas à boire, ni à manger.\n\n
+        &#8226; Préparez un peu de matériel : de grandes  serviettes propres, une paire de ciseaux, un antiseptique, etc.\n\n
+        &#8226; Lavez-vous soigneusement les mains et installez la maman. Demandez-lui de plier les genoux et d\'écarter les cuisses.\n\n
+        Si le bébé parait, il n\'y a plus qu\'à laisser l\'accouchement se dérouler de manière naturelle. Lorsque la tête est sortie, soutenez la et accompagnez la sortie du bébé. Surtout, ne pas tirer sur la tête, ni sur le cordon ombilical. Placez ensuite le bébé sur le ventre de la maman, couvrez-les et surveillez-les. Prêter tout spécialement attention à la respiration du bébé. Elle doit être régulière et non gênée.\n\n
+        Afin de limiter tout risque d\'accouchement intempestif, appelez les secours le plus rapidement possible. Par ailleurs, toutes les femmes enceintes doivent posséder un carnet de grossesse pour que l\'évolution soit suivie durant les neuf mois de grossesse.
+    </string>
+
+    <!-- Morsures et piqûres -->
+    <string name="mor_anim1_title">4 risques à craindre</string>
+    <string name="mor_anim1_desc">
+        Les morsures et les piqûres d\'animaux sont des accidents très fréquents, qui exposent essentiellement à quatre risques :\n\n
+        &#8226; Le saignement (dans ce cas il suffit d\'appuyer sur la plaie) ;\n\n
+        &#8226; L\'infection ;\n\n
+        &#8226; Le tétanos ;\n\n
+        &#8226; L\'action spécifique de la toxine ou des microbes apportés directement par la morsure ou la piqûre.
+        Outre la conduite habituelle face à une plaie simple, il est indispensable d\'effectuer quelques gestes spécifiques en fonction de l\'animal à l\'origine de la plaie.
+    </string>
+
+    <string name="mor_anim2_title">MORSURES D\'ANIMAUX</string>
+    <string name="mor_anim2_desc">
+        En cas de morsure, qu\'il s\'agisse d\'un animal domestique ou sauvage, la conduite à tenir est la même :\n\n
+        &#8226; Tout d\'abord lavez-vous soigneusement les mains, à l\'eau et au savon ;\n\n
+        &#8226; Nettoyez alors délicatement la plaie, à l\'eau tiède et à l\'aide d\'un savon de Marseille puis appliquez une solution antiseptique cutanée non colorée (que vous demanderez à votre pharmacien) ;\n\n
+        &#8226; Evitez de toucher la plaie avec vos doigts lors des soins ;\n\n
+        &#8226; Laissez sécher à l\'air pendant quelques minutes ;
+        &#8226; Terminez en plaçant un pansement prédécoupé (ou une compresse stérile) et de la maille élastique.
+    </string>
+
+    <string name="mor_anim3_title">PIQÛRES D\'ANIMAUX</string>
+    <string name="mor_anim3_desc">
+        Les piqûres d\'insectes sont habituellement plus douloureuses que dangereuses. Néanmoins, chez un sujet allergique, une réaction violente peut parfois être gravissime. La douleur initiale est suivie d\'un gonflement.\n\n
+        Devant toute piqûre, si un dard est visible, enlevez celui-ci avec une pince à épiler préalablement désinfectée à l\'alcool à 70°. Ensuite, effectuez exactement les mêmes gestes que devant toute plaie simple ou morsure.\n
+        Vérifiez la vaccination anti-tétanique de la victime.\n\n
+        Devant toute réaction allergique, appelez les urgences.
+    </string>
+
+    <!-- Fractures -->
+    <string name="fracture1_title">Les fractures du membre supérieur</string>
+    <string name="fracture1_desc">
+        Le membre fracturé peut être déformé, gonflé ou présenter un hématome.Le plus souvent, la victime soutient elle-même spontanément son bras, après le choc, afin de réduire la douleur. L\'immobilisation du membre est de rigueur car elle évite l\'aggravation de la fracture. Elle consiste à poser une écharpe simple ou à retourner un pull-over ou une chemise.\n\n
+        Le membre traumatisé sera ainsi maintenu. Dans tous les cas, il est indispensable de consulter un médecin.
+    </string>
+
+    <string name="fracture2_title">Les fractures du membre inférieur</string>
+    <string name="fracture2_desc">
+        La victime est allongée, le membre inférieur fracturé est douloureux, déformé et présente éventuellement un gonflement. Là encore, le membre doit être calé afin de réduire le risque de déplacement. Appeler immédiatement les secours afin d\'envisager un transport vers l\'hôpital où seront pratiqués les examens complémentaires.\n\n
+        Toute fracture de la cuisse est grave et nécessite l\'appel immédiat des urgences. La fracture du fémur (os de la cuisse) peut en effet provoquer une hémorragie et une détresse circulatoire grave.
+    </string>
+
+    <!-- Intoxication médicamenteuse -->
+    <string name="intox_medi1_title">Chez l\'adulte</string>
+    <string name="intox_medi1_desc">
+        L\'intoxication est le plus souvent volontaire (suicide) et les conséquences dépendent de la quantité ingérée et de la nature des produits. Très souvent, la personne devient somnolente et/ou vomit. Dans ce cas précis, une fois les voies aériennes libérées, placez la victime en position latérale de sécurité. En cas d\'arrêt respiratoire, pratiquez un bouche-à-bouche.\n\n
+        Alertez immédiatement les secours et donnez leurs les informations suiventes:\n\n
+        &#8226; La cause précise de l\'appel ;\n\n
+        &#8226; Le numéro de téléphone à partir duquel vous appelez ;\n\n
+        &#8226; Votre localisation, en précisant les éléments importants comme le numéro, le digicode, l\'escalier… ;\n\n
+        &#8226; Le nom des médicaments ;\n\n
+        &#8226; La quantité ingérée ;\n\n
+        &#8226; L\'absorption éventuelle d\'alcool ;\n\n
+        &#8226; Les troubles associés, notamment ceux liés à la conscience.\n\n
+        Surveillez la victime jusqu'à l\'arrivée des secours.
+    </string>
+
+    <string name="intox_medi2_title">Chez l\'adulte</string>
+    <string name="intox_medi2_desc">
+        Après l\'ingestion accidentelle, il est indispensable d\'appeler le SAMU afin de se faire communiquer les gestes d\'urgence.\n\n
+        Dans tous les cas, on évitera de faire boire ou de faire vomir l\'enfant.\n\n
+        En cas de trouble de la conscience de l\'enfant, mettez-le en position latérale de sécurité, en cas d\'arrêt respiratoire, effectuez un bouche à bouche.\n\n
+        Surveillez la victime jusqu'à l'arrivée des secours.
+    </string>
+
+</resources>
